@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <title>DeAgencia - Vende tu auto a buen precio</title>
+</head>
+<body>
+  <div class="contenedor">
+
+    <!-- Cabecera de la Pagína -->
+    <div class="contenedor__formulario">
+      <div class="log"><img src="https://cdn.deagenciapa.com/wp-content/uploads/2019/11/DEAGENCIA-POSITIVO.svg" id="logo"alt=""></div> 
+    <div class="find"><form id="form1">
+        <input class="buscador "type="text" placeholder="Busca el auto que desees aqui"/>
+        <select class="dropdown" name="cars" title="Filtro">
+          <option value="all">Todos</option>
+    <option value="pickup">Pick-Up</option>
+    <option value="sedan">Sedan</option>
+    <option value="camioneta">Camioneta</option>
+    <option value="electrico">Electrico</option>
+  </select> 
+      </form></div><div class="sell"><button class="button-5" role="button">Vender</button></div> 
+    </div> 
+      
+
+      <!-- MODAL VENDER AUTO -->
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Registra tu Auto</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div id="formulario">
+            <div id="formulario__box1">  <label for="fdropdown">Marca:</label><br>
+              <select id="fdropdown" name="carsModel" title="filter">
+                <option value="Mazda">Mazda</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Kia">Kia</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Ford">Ford</option>
+          <option value="Audi">Audi</option>
+          <option value="Chevrolet">Chevrolet</option>
+          <option value="Honda">Honda</option>
+          <option value="Mercedez">Mercedez</option>
+          <option value="Hyundai">Hyundai</option>
+        </select> <br><br></div>
+
+        <div id="formulario__box2">
+          <label for="fdropdown2">Tipo:</label>
+        <select id="fdropdown2" name="cars" title="Filtro">
+    <option value="pickup">Pick-Up</option>
+    <option value="sedan">Sedan</option>
+    <option value="camioneta">Camioneta</option>
+    <option value="electrico">Electrico</option>
+  </select> 
+  <br><br></div>
+          </div>
+         
+    <div id="formulario">
+      <div id="formulario__box1"> <label for="fmodel">Modelo:</label><br>
+        <input type="text" id="fmodel" name="fname" placeholder="Ej: CX-5" required  /><br><br></div>
+        <div id="formulario__box2"><label for="fyear">Año:</label><br>
+          <input type="number" id="fyear" name="lname" placeholder="2023" required  min="2014" max="2024" /><br><br></div>
+        </div>
+
+          <label for="fimage">Foto del auto:</label><br>
+          <div class="file-input">
+            <input
+              type="file"
+              name="file-input"
+              id="file-input"
+              class="file-input__input"
+            />
+            <label class="file-input__label" for="file-input">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="upload"
+                class="svg-inline--fa fa-upload fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                ></path>
+              </svg>
+              <span class="spanUpload">Upload file</span></label
+            >
+          </div><br>
+
+          <label for="fprice">Precio:</label><br>
+          <input type="number" id="fprice" name="fprice" placeholder="Ej: 10000" required/><br><br>
+
+          <div class="msj">Holaaaaaaaa</div>
+        </div>
+
+          <div class="modal-footer">
+            <input type="submit" class="button-2" value="Registrar">
+        </form>
+
+    </div>
+    </div>
+    </div>
+
+    
+    <!-- Contenido de la Pagína -->
+    <div class="contenedor__items">
+      <div class="item" id="electrico" marca="kia" model="soul">
+        <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2020/06/Kia-Soul-EV-2020-deagenciapa.com-01.png?fit=750%2C480&ssl=1" alt="kia soul">
+        <div class="item__info"> 
+            <h2 id="model">Kia Soul eléctrico</h2>
+            <p id="year">2020</p>
+            <h3 class="price">48,144</h3>
+        </div>
+        </div>
+        <div class="item" id="camioneta" marca="hyundai" model="venue">
+            <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2019/11/venue.png?zoom=2&resize=798%2C466&ssl=1" alt="hyundai venue">
+            <div class="item__info"> 
+                <h2 id="model">Hyundai Venue: GL Automático</h2>
+                <p id="year">2023</p>
+                <h3 class="price">19,999</h3>
+            </div>
+            </div>
+
+
+            <div class="item" id="electrico" marca="audi" model="e-tron">
+              <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2020/08/e-tron-icon.png?fit=1140%2C757&ssl=1" alt="audi">
+              <div class="item__info"> 
+                  <h2 id="model" >Audi e-tron</h2>
+                  <p id="year">2020</p>
+                  <h3 class="price">90,000</h3>
+              </div>
+              </div>
+
+              <div class="item" id="camioneta" marca="ford" model="territory">
+                <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2022/10/iconford-1.png?resize=550%2C410&ssl=1" alt="ford">
+                <div class="item__info"> 
+                    <h2 id="model" >Ford Territory: Titanium</h2>
+                    <p id="year">2023</p>
+                    <h3 class="price">36,900</h3>
+                </div>
+                </div>
+
+                <div class="item" id="camioneta" marca="ford" model="everest">
+                  <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2022/11/145631-1.png?zoom=2&resize=798%2C466&ssl=1" alt="ford everest">
+                  <div class="item__info"> 
+                      <h2 id="model" >Ford Everest: Limited 4×4</h2>
+                      <p id="year">2023</p>
+                      <h3 class="price">64,900</h3>
+                  </div>
+                  </div>
+
+                <div class="item" id="sedan" marca="mitsubishi" model="mirage">
+                  <img src="https://www.mitsubishimotors.pr/content/dam/mitsubishi-motors/images/cars/attrage/2021/primary/exterior/21attrage-01/A66_0_21ATTRAGE-01-Side.png" alt="mitsubishi">
+                  <div class="item__info"> 
+                      <h2 id="model" >Mitsubishi Mirage G4 AT</h2>
+                      <p id="year">2019</p>
+                      <h3 class="price">14,244</h3>
+                  </div>
+                  </div>
+
+                  <div class="item" id="sedan" marca="hyundai" model="i10">
+                    <img src="https://hyundai.petroautos.com/assets/uploads/161532882759205.png" alt="hyundai i10">
+                    <div class="item__info"> 
+                        <h2 id="model" >Hyundai i10 AT</h2>
+                        <p id="year">2019</p>
+                        <h3 class="price">14,799</h3>
+                    </div>
+                    </div>
+
+
+
+                    
+                  <div class="item" id="camioneta" marca="toyota" model="4runner">
+                    <img src="https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2023/4runner/sr5/8642/040/2.png?fm=webp&&w=768&h=328&q=90" alt="toyota 4runner">
+                    <div class="item__info"> 
+                        <h2 id="model" >Toyota 4Runner Limited</h2>
+                        <p id="year">2020</p>
+                        <h3 class="price">64,545</h3>
+                    </div>
+                    </div>
+
+
+                    
+                  <div class="item" id="pickup" marca="ford" model="ranger">
+                    <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2020/03/7644951a7d2c9ae53b89f173cae3c639-e1599929985513.png?resize=825%2C483&ssl=1" alt="ford ranger">
+                    <div class="item__info"> 
+                        <h2 id="model" >Ford Ranger Raptor</h2>
+                        <p id="year">2022</p>
+                        <h3 class="price">58,900</h3>
+                    </div>
+                    </div>
+
+
+                    
+                  <div class="item" id="sedan" marca="hyundai" model="i10">
+                    <img src="https://i0.wp.com/www.deagenciapanama.com/wp-content/uploads/2019/10/MAZDA6ICON.png?fit=2175%2C1540&ssl=1" alt="hyundai i10">
+                    <div class="item__info"> 
+                        <h2 id="model" >Mazda 6 Limited</h2>
+                        <p id="year">2020</p>
+                        <h3 class="price">33,494</h3>
+                    </div>
+                    </div>
+
+
+    </div>
+  </div>
+
+  <script src="js/buscador-front.js"></script>
+  <script src="js/modal-vender.js"></script>
+</body>
+</html>
